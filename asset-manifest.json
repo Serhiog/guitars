@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a282fb7b.chunk.css",
-    "main.js": "/static/js/main.ad316c5a.chunk.js",
-    "main.js.map": "/static/js/main.ad316c5a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.38af5405.js",
-    "runtime-main.js.map": "/static/js/runtime-main.38af5405.js.map",
-    "static/js/2.ee383895.chunk.js": "/static/js/2.ee383895.chunk.js",
-    "static/js/2.ee383895.chunk.js.map": "/static/js/2.ee383895.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a282fb7b.chunk.css.map": "/static/css/main.a282fb7b.chunk.css.map",
-    "static/js/2.ee383895.chunk.js.LICENSE.txt": "/static/js/2.ee383895.chunk.js.LICENSE.txt",
-    "static/media/acu-max.e69133cd.png": "/static/media/acu-max.e69133cd.png",
-    "static/media/style.css": "/static/media/up.1a04d870.svg",
-    "static/media/electro-max.bb21246a.png": "/static/media/electro-max.bb21246a.png",
-    "static/media/ucu-max.7a2b2f0b.png": "/static/media/ucu-max.7a2b2f0b.png"
+    "main.css": "/guitars/static/css/main.af86ccc2.chunk.css",
+    "main.js": "/guitars/static/js/main.ad316c5a.chunk.js",
+    "main.js.map": "/guitars/static/js/main.ad316c5a.chunk.js.map",
+    "runtime-main.js": "/guitars/static/js/runtime-main.3941363f.js",
+    "runtime-main.js.map": "/guitars/static/js/runtime-main.3941363f.js.map",
+    "static/js/2.ee383895.chunk.js": "/guitars/static/js/2.ee383895.chunk.js",
+    "static/js/2.ee383895.chunk.js.map": "/guitars/static/js/2.ee383895.chunk.js.map",
+    "index.html": "/guitars/index.html",
+    "static/css/main.af86ccc2.chunk.css.map": "/guitars/static/css/main.af86ccc2.chunk.css.map",
+    "static/js/2.ee383895.chunk.js.LICENSE.txt": "/guitars/static/js/2.ee383895.chunk.js.LICENSE.txt",
+    "static/media/acu-max.e69133cd.png": "/guitars/static/media/acu-max.e69133cd.png",
+    "static/media/style.css": "/guitars/static/media/up.1a04d870.svg",
+    "static/media/electro-max.bb21246a.png": "/guitars/static/media/electro-max.bb21246a.png",
+    "static/media/ucu-max.7a2b2f0b.png": "/guitars/static/media/ucu-max.7a2b2f0b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.38af5405.js",
+    "static/js/runtime-main.3941363f.js",
     "static/js/2.ee383895.chunk.js",
-    "static/css/main.a282fb7b.chunk.css",
+    "static/css/main.af86ccc2.chunk.css",
     "static/js/main.ad316c5a.chunk.js"
   ]
 }
