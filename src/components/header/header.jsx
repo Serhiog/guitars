@@ -1,10 +1,11 @@
-import {useEffect, useState} from "react";
-import {connect} from "react-redux";
-import {withRouter} from "react-router";
-import {paths} from "../../consts";
+import { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { paths } from "../../consts";
+import { useLocation, Link } from "react-router-dom";
 
-function Header({history, selectedGuitarsID}) {
+function Header({ selectedGuitarsID }) {
 
+  const location = useLocation();
   const [burger, setBurger] = useState(false);
 
   const handleBurgerOpen = () => {
@@ -26,25 +27,28 @@ function Header({history, selectedGuitarsID}) {
 
   const handleCart = (evt) => {
     evt.preventDefault();
-    history.push(paths.cart);
+    location(paths.cart);
   };
 
   const handleCatalog = (evt) => {
     evt.preventDefault();
-    history.push(paths.main);
+    location(paths.main);
   };
 
   return (
     <header className={burger && width < 769 ? `header header--burger-active` : `header`}>
       <div className="header__inner">
         <button className="header__burger" onClick={handleBurgerOpen}></button>
-        <div className="header__logo" onClick={() => history.push(`/`)}></div>
+        <Link to="/">
+          <div className="header__logo">
+          </div>
+        </Link>
         <ul className="header__nav">
           <li className="header__nav-item">
             <button className="header__nav-item-close" onClick={handleBurgerClose}></button>
           </li>
           <li className="header__nav-item">
-            <a tabIndex={0} className="header__nav-item-link" href="/" onClick={handleCatalog}>Каталог</a>
+            <a tabIndex={0} className="header__nav-item-link" href="/" onClick={() => handleCatalog}>Каталог</a>
           </li>
           <li className="header__nav-item">
             <a tabIndex={0} className="header__nav-item-link" href="/"> Где купить?</a>
@@ -67,14 +71,14 @@ function Header({history, selectedGuitarsID}) {
             <a tabIndex={0} className="header__user-item-link" href="/">Search</a>
           </li>
           <li className="header__user-item header__user-item--cart">
-            <a tabIndex={0} className="header__user-item-link header__user-item-link--cart" href="/" onClick={handleCart}>
+            <a tabIndex={0} className="header__user-item-link header__user-item-link--cart" href="/" onClick={() => handleCart}>
               Cart
               <span className="header__user-item-link-count">{selectedGuitarsID.length > 0 && selectedGuitarsID.length}</span>
             </a>
           </li>
         </ul>
       </div>
-    </header>
+    </header >
   );
 }
 
@@ -82,4 +86,4 @@ const mapStateToProps = (state) => ({
   selectedGuitarsID: state.selectedGuitarsID
 });
 
-export default connect(mapStateToProps)(withRouter(Header));
+export default connect(mapStateToProps)(Header);

@@ -1,13 +1,13 @@
 import Item from "../item/item";
-import {connect} from "react-redux";
-import {getGuitarsWithPriceSort} from "../../store/selectors";
-import {useState} from "react";
+import { connect } from "react-redux";
+import { getGuitarsWithPriceSort } from "../../store/selectors";
+import { useState } from "react";
 import Pagination from "../pagination/pagination";
-import {maxGuitarsOnPage} from "../../consts";
+import { maxGuitarsOnPage } from "../../consts";
 
 
-const ItemsContainer = ({guitarsList}) => {
-  
+const ItemsContainer = ({ guitarsList }) => {
+
   const itemsPages = Math.ceil(guitarsList.length / maxGuitarsOnPage);
   const pages = [];
   for (let page = 1; page < itemsPages + 1; page++) {

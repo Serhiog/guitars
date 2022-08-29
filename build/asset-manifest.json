@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/guitars/static/css/main.4a5f834c.chunk.css",
+    "main.css": "/guitars/static/css/main.b7a37a44.chunk.css",
     "main.js": "/guitars/static/js/main.a8e31b07.chunk.js",
     "main.js.map": "/guitars/static/js/main.a8e31b07.chunk.js.map",
     "runtime-main.js": "/guitars/static/js/runtime-main.eaf00095.js",
@@ -8,7 +8,7 @@
     "static/js/2.6203d46c.chunk.js": "/guitars/static/js/2.6203d46c.chunk.js",
     "static/js/2.6203d46c.chunk.js.map": "/guitars/static/js/2.6203d46c.chunk.js.map",
     "index.html": "/guitars/index.html",
-    "static/css/main.4a5f834c.chunk.css.map": "/guitars/static/css/main.4a5f834c.chunk.css.map",
+    "static/css/main.b7a37a44.chunk.css.map": "/guitars/static/css/main.b7a37a44.chunk.css.map",
     "static/js/2.6203d46c.chunk.js.LICENSE.txt": "/guitars/static/js/2.6203d46c.chunk.js.LICENSE.txt",
     "static/media/acu-max.e69133cd.png": "/guitars/static/media/acu-max.e69133cd.png",
     "static/media/style.css": "/guitars/static/media/up.1a04d870.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.eaf00095.js",
     "static/js/2.6203d46c.chunk.js",
-    "static/css/main.4a5f834c.chunk.css",
+    "static/css/main.b7a37a44.chunk.css",
     "static/js/main.a8e31b07.chunk.js"
   ]
 }

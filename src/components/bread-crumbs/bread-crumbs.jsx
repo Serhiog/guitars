@@ -1,16 +1,18 @@
-import { withRouter } from "react-router";
 import { paths } from "../../consts";
+import { useLocation } from "react-router-dom";
 
-const BreadCrumbs = ({ location, history }) => {
+const BreadCrumbs = () => {
+
+  const location = useLocation();
 
   const handleMainLink = (evt) => {
     evt.preventDefault();
-    history.push(paths.main);
+    location(paths.main);
   };
 
   const handleCartLink = (evt) => {
     evt.preventDefault();
-    history.push(paths.cart);
+    location(paths.cart);
   };
 
 
@@ -26,4 +28,4 @@ const BreadCrumbs = ({ location, history }) => {
   );
 };
 
-export default withRouter(BreadCrumbs);
+export default BreadCrumbs;

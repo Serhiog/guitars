@@ -1,21 +1,18 @@
 import React from "react";
-import {Router} from "react-router-dom";
-import history from "./browser-history";
-import {connect} from "react-redux";
-import CommonInner from "./components/common-inner/common-inner";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import CartPage from "./components/cart-page/cart-page";
+import MainPage from "./components/main-page/main-page";
 
-function App({isPopup}) {
+function App() {
   return (
-    <Router history={history}>
-      <div className={!isPopup ? `wrapper` : `wrapper--popup-active`}>
-        <CommonInner />
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="*" element={<MainPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-const mapStateToProps = (state) => ({
-  isPopup: state.isPopup,
-});
-
-export default connect(mapStateToProps)(App);
+export default App;

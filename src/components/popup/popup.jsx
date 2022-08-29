@@ -4,7 +4,6 @@ import { getClickedGuitar } from "../../store/selectors";
 import miniElectro from "../../img/electro-mini.png";
 import miniAcu from "../../img/acu-mini.png";
 import miniUcu from "../../img/ucu-mini.png";
-import { withRouter } from "react-router";
 import { commonButtons, guitarTypes } from "../../consts";
 import { useEffect } from "react";
 import { paths } from "../../consts";
@@ -128,4 +127,4 @@ const mapStateToProps = (state) => ({
   popupStatus: state.popupStatus
 });
 
-export default connect(mapStateToProps, { setSelectedGuitarID, showPopup, changePopupStatus, deleteCortItem })(withRouter(Popup));
+export default connect(mapStateToProps, { setSelectedGuitarID, showPopup, changePopupStatus, deleteCortItem })(Popup);

@@ -5,7 +5,6 @@ import CartItem from "../cart-item/cart-item";
 import { setPromo } from "../../store/action";
 import { useEffect, useState } from "react";
 import { Promocodes } from "../../consts";
-import { withRouter } from "react-router";
 import { paths } from "../../consts";
 
 const Cart = ({ selectedGuitars, totalPrice, setPromo, promoPrice, history }) => {
@@ -74,4 +73,4 @@ const mapStateToProps = (state) => ({
 });
 
 
-export default connect(mapStateToProps, { setPromo })(withRouter(Cart));
+export default connect(mapStateToProps, { setPromo })(Cart);

@@ -1,4 +1,5 @@
 export const ActionType = {
+  GET_DATA: `GET_DATA`,
   SET_PROMO: `SET_PROMO`,
   SHOW_POPUP: `SHOW_POPUP`,
   HIDE_POPUP: `HIDE_POPUP`,
@@ -14,6 +15,11 @@ export const ActionType = {
   CHANGE_POPUP_STATUS: `CHANGE_POPUP_STATUS`,
   SET_SELECTED_GUITAR_ID: `SET_SELECTED_GUITAR_ID`,
 };
+
+export const getData = (payload) => ({
+  type: ActionType.GET_DATA,
+  payload,
+});
 
 export const clickedGuitar = (payload) => ({
   type: ActionType.CLICKED_GUITAR,
